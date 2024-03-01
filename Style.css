@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #070707;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    position: relative;
+}
+
+/*<!--navbar-->*/
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu .navbar ul li a{
+    font-size: 20px;
+    padding: 40px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.menu .navbar ul li a:hover{
+    color: #D4192C;
+}  
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 30px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/*<!--Carrito-->*/
+.submenu {
+    position: relative;
+}
+.submenu #carrito {
+    display: none;
+}
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076; 
+    padding: 20px;
+    min-width: 400px;
+    min-width: 400px;
+ }
+
+ table {
+    width: 100%;
+ }
+
+ th{
+    color: #ffffff;
+ }
+
+ td {
+    color:#ffffff;
+ }
+
+ .borrar {
+    background-color: #D4192C;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+ }
+
+.header-content {
+    position: relative;
+    text-align: center;
+    margin-top: 108px;
+    height: 56vh !important;
+    background: url(img/imgBanner.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+
+.header-content h1{
+    font-size: 100px;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.header-content p {
+    font-size: 22.5px;
+    padding: 0 250px;
+    color: #ffffff;
+    margin-bottom: 80px;
+}
+
+.botons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-1 {
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px;
+    padding: 10px 5px;
+    border-radius: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #D4192C;
+}
+
+.btn-1:hover {
+    background-color: #8F1121;
+}
+
+.socials-1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    margin-top: 200px;
+}
+
+.socials-1 img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 200px;
+    height: 150px;
+    
+}
+
+/* deportes disciplinas */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align:baseline;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deporte {
+    padding: 30px;
+    background: #070707
+}
+
+.deporte-1 h3{
+    font-size: 80px;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.deporte p {
+    font-size: 20px;
+    padding: 0 250px;
+    color: #ffffff;
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 12rem;
+    width: 18rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(3, 21, 80, 0.37);
+    margin: 2rem;   
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9b0000;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9b0000;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+/*resto*/
+
+.recetas {
+    display: flex;
+    padding: 120px 0;
+}
+
+.recetas-1 {
+    width: 50%;
+}
+
+.recetas-1 h3 {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #ffffff;
+}
+ .recetas-1 p {
+    color: #D4192C;
+ }
+
+ .recetas-1 hr {
+    margin: 10px 0;
+    border: 1px solid #312F32;
+ }
+ 
+.recetas-2 {
+    width: 50%;
+    text-align: center;
+}
+
+.recetas-2 h2 {
+    font-size: 80px;
+    line-height: 100px;
+    color: #ffffff;
+}
+
+.platillos {
+    padding: 50px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+.swiper-button-prev {
+    color: #D4192C;
+}
+
+.swiper-button-next {
+    color: #D4192C;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ffffff;
+    opacity: 1;
+    top: 50px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #D4192C;
+}
+
+
+.platillo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.platillo h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    color: #D4192C !important;
+}
+
+.platillo img {
+    width: 200px;
+    margin-top: 40px;
+}
+
+.platillo p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #D4192C;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+.btn-2:hover {
+    background-color: #8F1121;
+}
+
+.c1, .c2 {
+    color: #ffffff !important;
+}
+
+.btn-3 {
+    display: inline-block;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 25px;
+    margin-top: 25px;
+    border: 1px solid #D4192C;
+}
+
+.btn-3:hover {
+    background-color: #8F1121;
+    border: 1px solid #8F1121;
+}
+
+.about {
+    display: flex;
+    position: relative;
+}
+
+.about-content {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    height: 56vh !important;
+    background: url(img/imgAbout.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+}
+
+.about-content h1{
+    font-size: 80px;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    font-size: 20px;
+    padding: 0 200px;
+    color: #ffffff;
+    margin-bottom: 800px;
+}
+
+.footer {
+    padding-bottom: 50px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    margin-top: -8%;
+    width: 25%;
+}
+
+.link h3 {
+    font-size: 20px;
+    color: #DFDDE0;
+    margin-bottom: 20px;
+}
+
+.link p {
+    color: #8d7e7b;
+    font-size: 14px;
+    margin: 0 50px 15px 0;
+}
+
+.link ul li a {
+    display: inline-block;
+    font-size: 16px;
+    color: #DFDDE0;
+    margin-bottom: 10px;
+}
+
+.socials-2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.link form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inp {
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn-4 {
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: #61bc00;
+    border: 0;
+    color: #ffffff;
+}
+
+
+@media (max-width: 991px){
+    .menu {
+        padding: 30px;
+    }
+    
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+    .logo {
+        display: none
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 30px;
+        margin-top: 130px;
+    }
+
+    .header-content h1 {
+        font-size: 40px;
+    }
+
+    .header-content p {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .botons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-1 {
+        margin: 0 0 20px 0;
+    }
+
+    .socials-1 {
+        display: none;
+    }
+
+    .socials-2 {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .recetas {
+        flex-direction: column;
+        padding: 0px 30px;
+        text-align: center;
+    }
+
+    .recetas-1 {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .recetas-2 {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .link {
+        width: 70%;
+    }
+
+    .link p {
+        margin: 0 0 25px 0;
+    }
+
+    .socials-2 {
+        margin-bottom: 15px;
+    }
+
+}
+/*estilo fb e insta*/
+:root {
+    --link-size: 64px;
+    --trans-props: all 0.3s ease;
+  }
+  
+  .wrapper,
+  .social-icons {
+    display: flex;
+    padding: 10px;
+    margin-top: -250%;
+    margin-right: 50%;
+  }
+
+  /*** Containers and icons ***/
+  .social-icon {
+    display: flex;
+  
+    position: relative;
+    overflow: hidden; /* Trim branded overlays */
+  
+    width: var(--link-size);
+    height: var(--link-size);
+    margin: 8px;
+  
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  
+    text-decoration: none;
+  
+    transition: var(--trans-props);
+    
+  }
+  
+  .social-icon i {
+    margin: auto; /* Perfect centering thanks to parental flex */
+  
+    font-size: 24px;
+    color: hsl(212, 16%, 48%);
+  
+    z-index: 1; /* Make sure icons will be on top */
+  
+    transition: var(--trans-props);
+  }
+  
+  /*** Branded overlays from the bottom ***/
+  .social-icon:after {
+    content: "";
+  
+    width: var(--link-size);
+    height: var(--link-size);
+  
+    position: absolute;
+  
+    transform: translate(0, var(--link-size));
+  
+    border-radius: 50%;
+    transition: var(--trans-props);
+  }
+  
+  .social-icon.facebook:after {
+    background-color: #3b5998;
+  }
+  
+  .social-icon.instagram:after {
+    background-image: linear-gradient(
+      to bottom left,
+      #4f5bd5,
+      #962fbf,
+      #d62976,
+      #fa7e1e,
+      #feda75
+    );
+  }
+  
+  /*** Animations ***/
+  .social-icon:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+  }
+  
+  .social-icon:hover i {
+    /*  transform: scale(1.1); */
+    color: #fff;
+  }
+  
+  .social-icon:hover:after {
+    transform: translate(0) scale(1.2);
+  }
+
